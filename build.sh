@@ -1,5 +1,8 @@
-applecommander -dos140 exit.dsk; # create image disk with dosk image
+cp empty.dsk exit.dsk # copy pre-existing .dsk image
+
+cat hello.bas | applecommander -bas exit.dsk hello; # put hello.bas in exit.dsk
 cat exit.bas | applecommander -bas exit.dsk exit; # put exit.bas in exit.dsk
+
 
 images=("splash" "1-1" "1-2" "1-3" "1-4" "1-5" "1-6" "1-7" "2-1")
 for i in "${images[@]}"
