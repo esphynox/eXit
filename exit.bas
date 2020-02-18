@@ -41,7 +41,7 @@
 
 490 HOME:HGR:D$=CHR$(4):PRINT D$;"BLOAD 1-4.HGR"
 500 VTAB 21:PRINT "Your friend hands you a note. What do you do?":INPUT A$;
-510 IF A$ = "Light a match" THEN GOTO 150
+510 IF A$ = "Light a match" THEN GOTO 540
 520 PRINT "You can't do that here":GOTO 490
 
 540 HOME:HGR:D$=CHR$(4):PRINT D$;"BLOAD 2-1.HGR"
