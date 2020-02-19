@@ -1,7 +1,9 @@
 cp empty.dsk exit.dsk # copy pre-existing .dsk image
 
-cat src/hello.bas | applecommander -bas exit.dsk hello; # put hello.bas in exit.dsk
-cat src/exit.bas | applecommander -bas exit.dsk exit; # put exit.bas in exit.dsk
+./bin/tokenize_asoft < src/hello.bas > src/HELLO # compile `hello.bas` 
+./bin/tokenize_asoft < src/exit.bas > src/EXIT # compile `exit.bas`
+./bin/dos33 exit.dsk SAVE A src/HELLO # put `hello.bas` in `exit.dsk`
+./bin/dos33 exit.dsk SAVE A src/EXIT # put `exit.bas` in `exit.dsk`
 
 images=("img0" "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8")
 for i in "${images[@]}"
