@@ -1,3 +1,3 @@
    5  HOME
-  20 PRINT CHR$(4)+"RUN EXIT"
+  20 PRINT CHR$(4)+"RUN SPLASH"
 

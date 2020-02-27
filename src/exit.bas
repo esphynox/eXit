@@ -1,6 +1,3 @@
-1 HOME:HGR:D$=CHR$(4):PRINT D$;"BLOAD img0.HGR"
-20 HTAB 11:VTAB 22:PRINT "PRESS ANY KEY TO START":GET X$
-
 30 HOME:HGR:D$=CHR$(4):PRINT D$;"BLOAD img1.HGR"
 40 VTAB 21:PRINT "You're trapped in a dungeon with your friend. You see a barrel. What do you do?":INPUT A$;
 50 IF A$ = "Move barrel" THEN GOTO 140

@@ -1,6 +1,6 @@
 cp empty.dsk exit.dsk # copy pre-existing .dsk image
 
-src=("HELLO" "EXIT")
+src=("HELLO" "SPLASH" "EXIT")
 for i in "${src[@]}"
 do
   ./bin/tokenize_asoft < src/${i}.bas > src/${i}
