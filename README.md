@@ -1,3 +1,5 @@
+![eXit](https://github.com/esphynox/eXit/raw/master/logo.png)
+
 # eXit
 
 A replica of a small quest game that appeared in S4E11 of Mr. Robot series. Basically, that's a copy of [this resource](https://www.whoismrrobot.com/exit/) but written completely in Applesoft BASIC to have capability launched on Apple II+ computers.
