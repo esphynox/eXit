@@ -4,8 +4,8 @@ cp ${path}/empty.dsk $path/exit.dsk # copy pre-existing .dsk image
 src=("HELLO" "SPLASH" "EXIT")
 for i in "${src[@]}"
 do
-  ./bin/tokenize_asoft < src/${i}.bas > src/${i}
-  ./bin/dos33 ${path}/exit.dsk SAVE A src/${i}
+  ./bin/tokenize_asoft < src/${i}.bas > src/tokenized/${i}
+  ./bin/dos33 ${path}/exit.dsk SAVE A src/tokenized/${i}
 done
 
 images=("img0" "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8")
