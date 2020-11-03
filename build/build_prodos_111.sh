@@ -16,6 +16,8 @@ result_disk_path=${disks_path}/${result_disk_filename}
 
 cp ${empty_disk_path} ${result_disk_path} # copy pre-existing .dsk image
 
+applecommander -n ${result_disk_path} "eXit"
+
 # copy src files
 src=("STARTUP" "SPLASH" "EXIT")
 for i in "${src[@]}"
