@@ -3,8 +3,6 @@ path="../disks/dos"
 root_path="../"
 bin_path=${root_path}"bin"
 images_path=${root_path}"images"
-png_images_path=${images_path}"/png"
-hgr_images_path=${images_path}"/hgr"
 disks_path=${root_path}"disks"
 src_path=${root_path}"src"
 
@@ -29,8 +27,9 @@ done
 images=("img0" "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8")
 for i in "${images[@]}"
 do
-  ${bin_path}/tohgr ${png_images_path}/${i}_280x192.png &>/dev/null # convert png to hgr w/ `tohgr` tool
-  mv ${png_images_path}/${i}_280x192.hgr ${hgr_images_path}/${i}.hgr # move .hgr file to "hgr" folder
-  rm ${png_images_path}/${i}_280x192_hgr.png # remove .png preview file
-  applecommander -p ${result_disk_path} ${i}.HGR BIN 0x2000 < ${hgr_images_path}/${i}.HGR; # put hgr to disk image
+  ${bin_path}/tohgr ${images_path}/${i}_280x192.png &>/dev/null # convert png to hgr w/ `tohgr` tool
+  mv ${images_path}/${i}_280x192.hgr ${images_path}/${i}.hgr # move .hgr file to "hgr" folder
+  rm ${images_path}/${i}_280x192_hgr.png # remove .png preview file
+  applecommander -p ${result_disk_path} ${i}.HGR BIN 0x2000 < ${images_path}/${i}.HGR; # put hgr to disk image
+  rm -rf ${images_path}/${i}.hgr # delete hgr image
 done
