@@ -5,8 +5,8 @@ bin_path=${root_path}"bin"
 images_path=${root_path}"images"
 png_images_path=${images_path}"/png"
 hgr_images_path=${images_path}"/hgr"
-disks_path=${root_path}"disks/prodos"
-src_path=${root_path}"src/raw"
+disks_path=${root_path}"disks"
+src_path=${root_path}"src"
 
 empty_disk_filename="empty_prodos_111.dsk"
 empty_disk_path=${disks_path}/${empty_disk_filename}
