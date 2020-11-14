@@ -2,7 +2,7 @@
 
 # eXit
 
-A replica of a text quest game that appeared in S4E11 of Mr. Robot series. Basically, that's a copy of [existing web-version of "eXit"](https://www.whoismrrobot.com/exit/) but written completely in Applesoft BASIC to be natively running on Apple ][ computers.
+A replica of a text quest game that appeared in S4E11 of Mr. Robot series. Basically, that's a copy of [existing web-version of "eXit"](https://www.whoismrrobot.com/exit/) but written completely in Applesoft BASIC to be natively ran on Apple ][ computers.
 
 ## Getting Started 
 
