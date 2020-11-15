@@ -14,7 +14,7 @@ If you wan't to build this image by your own hands proceed to next section.
 
 1. Install `libjpeg` & `libpng`
 2. `cd build`
-3. `sh build_prodos_111.sh`
+3. `sudo sh build_prodos_111.sh`
 4. Grab your fresh `.dsk` image at `disks/exit_prodos_111.dsk` 
 
 ## Built With
