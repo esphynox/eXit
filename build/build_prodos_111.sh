@@ -6,10 +6,10 @@ images_path=${root_path}"images"
 disks_path=${root_path}"disks"
 src_path=${root_path}"src"
 
-empty_disk_filename="empty_prodos_111.dsk"
+empty_disk_filename="empty_prodos_111.po"
 empty_disk_path=${disks_path}/${empty_disk_filename}
 
-result_disk_filename="exit_prodos_111.dsk"
+result_disk_filename="exit_prodos_111.po"
 result_disk_path=${disks_path}/${result_disk_filename}
 
 cp ${empty_disk_path} ${result_disk_path} # copy pre-existing .dsk image
