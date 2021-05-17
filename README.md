@@ -19,7 +19,7 @@ If you wan't to build this image by your own hands proceed to next section.
 
 ## Built With
 
-### Simulator
+### Emulator
 
 - [microm8](https://paleotronic.com/software/microm8/) - Apple II Emulator for Windows, macOS / OSX and Linux
 
